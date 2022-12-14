@@ -264,16 +264,6 @@ Public Class Form1
         Dim otherItems As String() = {label, price}
         Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Addon4_but.Click
-        Dim qty, price As Integer
-        Dim label As String
-        qty = Addon3_qty.Text
-        label = Addon3.Text
-
-        price = qty * Val(Addon3_but.Text)
-        Dim otherItems As String() = {label, price}
-        Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
-    End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Addon3_but.Click
         Dim qty, price As Integer
         Dim label As String
@@ -284,6 +274,17 @@ Public Class Form1
         Dim otherItems As String() = {label, price}
         Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
     End Sub
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Addon4_but.Click
+        Dim qty, price As Integer
+        Dim label As String
+        qty = Addon3_qty.Text
+        label = Addon3.Text
+
+        price = qty * Val(Addon3_but.Text)
+        Dim otherItems As String() = {label, price}
+        Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
+    End Sub
+
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Addon5_but.Click
         Dim qty, price As Integer
         Dim label As String
@@ -400,5 +401,15 @@ Public Class Form1
                "Change:" & vbTab & vbTab & Val(sukli.Text) & vbCrLf & vbCrLf &
                "THANK YOU FOR DINING WITH US! " & vbCrLf & vbTab & Space(2) & "PLEASE COME AGAIN")
         Me.Close()
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        UI.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        ListView1.Items.Clear()
+        ClearTextBox(Me)
     End Sub
 End Class

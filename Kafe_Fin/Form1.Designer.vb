@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Me.J_Txt1 = New System.Windows.Forms.TextBox()
         Me.J_But3 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -126,6 +127,10 @@ Partial Class Form1
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.Column_qty = New System.Windows.Forms.ColumnHeader()
+        Me.Column_Desc = New System.Windows.Forms.ColumnHeader()
+        Me.Column_Price = New System.Windows.Forms.ColumnHeader()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.GroupBox17 = New System.Windows.Forms.GroupBox()
@@ -157,10 +162,6 @@ Partial Class Form1
         Me.Remove_but = New System.Windows.Forms.Button()
         Me.Proceed_but = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader1 = New System.Windows.Forms.ColumnHeader()
-        Me.ColumnHeader2 = New System.Windows.Forms.ColumnHeader()
-        Me.ColumnHeader3 = New System.Windows.Forms.ColumnHeader()
         Me.GroupBox16 = New System.Windows.Forms.GroupBox()
         Me.Addon5_but = New System.Windows.Forms.Button()
         Me.Addon6 = New System.Windows.Forms.Label()
@@ -209,6 +210,7 @@ Partial Class Form1
         Me.C_Rad1 = New System.Windows.Forms.RadioButton()
         Me.Coffee1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1489,6 +1491,7 @@ Partial Class Form1
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.ListView1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label35)
         Me.Panel1.Controls.Add(Me.GroupBox17)
@@ -1496,7 +1499,6 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Remove_but)
         Me.Panel1.Controls.Add(Me.Proceed_but)
         Me.Panel1.Controls.Add(Me.Label25)
-        Me.Panel1.Controls.Add(Me.ListView1)
         Me.Panel1.Controls.Add(Me.GroupBox16)
         Me.Panel1.Controls.Add(Me.Label20)
         Me.Panel1.Controls.Add(Me.PictureBox16)
@@ -1526,17 +1528,46 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(1804, 984)
         Me.Panel1.TabIndex = 3
         '
+        'ListView1
+        '
+        Me.ListView1.BackgroundImage = Global.Kafe_Fin.My.Resources.Resources.asdasd
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Column_qty, Me.Column_Desc, Me.Column_Price})
+        Me.ListView1.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        ListViewItem2.StateImageIndex = 0
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem2})
+        Me.ListView1.Location = New System.Drawing.Point(1254, 158)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(458, 215)
+        Me.ListView1.TabIndex = 273
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'Column_qty
+        '
+        Me.Column_qty.Text = "Qty"
+        Me.Column_qty.Width = 50
+        '
+        'Column_Desc
+        '
+        Me.Column_Desc.Text = "Description"
+        Me.Column_Desc.Width = 250
+        '
+        'Column_Price
+        '
+        Me.Column_Price.Text = "Price"
+        Me.Column_Price.Width = 150
+        '
         'Button1
         '
         Me.Button1.AutoSize = True
-        Me.Button1.BackColor = System.Drawing.Color.LightGray
-        Me.Button1.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.BackColor = System.Drawing.SystemColors.Info
+        Me.Button1.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Location = New System.Drawing.Point(34, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(108, 26)
+        Me.Button1.Size = New System.Drawing.Size(121, 26)
         Me.Button1.TabIndex = 10
-        Me.Button1.Text = "<⬅  UI SELECT"
+        Me.Button1.Text = "<--  UI SELECT"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Label35
@@ -1555,6 +1586,7 @@ Partial Class Form1
         '
         Me.GroupBox17.BackgroundImage = Global.Kafe_Fin.My.Resources.Resources.asdasd
         Me.GroupBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox17.Controls.Add(Me.Button2)
         Me.GroupBox17.Controls.Add(Me.Done_but)
         Me.GroupBox17.Controls.Add(Me.sukli)
         Me.GroupBox17.Controls.Add(Me.bayad)
@@ -1584,7 +1616,7 @@ Partial Class Form1
         Me.Done_but.BackColor = System.Drawing.Color.DarkSeaGreen
         Me.Done_but.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Done_but.ForeColor = System.Drawing.Color.Black
-        Me.Done_but.Location = New System.Drawing.Point(192, 249)
+        Me.Done_but.Location = New System.Drawing.Point(142, 244)
         Me.Done_but.Name = "Done_but"
         Me.Done_but.Size = New System.Drawing.Size(108, 26)
         Me.Done_but.TabIndex = 289
@@ -1883,34 +1915,6 @@ Partial Class Form1
         Me.Label25.Size = New System.Drawing.Size(332, 39)
         Me.Label25.TabIndex = 26
         Me.Label25.Text = "—-— ORDERS —-—"
-        '
-        'ListView1
-        '
-        Me.ListView1.BackColor = System.Drawing.SystemColors.Desktop
-        Me.ListView1.BackgroundImage = Global.Kafe_Fin.My.Resources.Resources.asdasd
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
-        Me.ListView1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ListView1.ForeColor = System.Drawing.SystemColors.Window
-        Me.ListView1.Location = New System.Drawing.Point(1255, 164)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(457, 232)
-        Me.ListView1.TabIndex = 25
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "Qty"
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "Product"
-        Me.ColumnHeader2.Width = 290
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "Price"
-        Me.ColumnHeader3.Width = 100
         '
         'GroupBox16
         '
@@ -2496,6 +2500,18 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.IndianRed
+        Me.Button2.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Location = New System.Drawing.Point(263, 244)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(138, 26)
+        Me.Button2.TabIndex = 274
+        Me.Button2.Text = "ORDER AGAIN"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -2719,10 +2735,6 @@ Partial Class Form1
     Friend WithEvents Remove_but As Button
     Friend WithEvents Proceed_but As Button
     Friend WithEvents Label25 As Label
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents ColumnHeader1 As ColumnHeader
-    Friend WithEvents ColumnHeader2 As ColumnHeader
-    Friend WithEvents ColumnHeader3 As ColumnHeader
     Friend WithEvents GroupBox17 As GroupBox
     Friend WithEvents Done_but As Button
     Friend WithEvents sukli As TextBox
@@ -2750,4 +2762,9 @@ Partial Class Form1
     Friend WithEvents Label84 As Label
     Friend WithEvents Label35 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents Column_qty As ColumnHeader
+    Friend WithEvents Column_Desc As ColumnHeader
+    Friend WithEvents Column_Price As ColumnHeader
+    Friend WithEvents Button2 As Button
 End Class
