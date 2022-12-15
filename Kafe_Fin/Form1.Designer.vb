@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Me.J_Txt1 = New System.Windows.Forms.TextBox()
         Me.J_But3 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -134,6 +134,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.GroupBox17 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Done_but = New System.Windows.Forms.Button()
         Me.sukli = New System.Windows.Forms.TextBox()
         Me.bayad = New System.Windows.Forms.TextBox()
@@ -210,7 +211,6 @@ Partial Class Form1
         Me.C_Rad1 = New System.Windows.Forms.RadioButton()
         Me.Coffee1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -556,7 +556,7 @@ Partial Class Form1
         'PictureBox16
         '
         Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
-        Me.PictureBox16.Location = New System.Drawing.Point(1368, 2)
+        Me.PictureBox16.Location = New System.Drawing.Point(1300, 3)
         Me.PictureBox16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(229, 112)
@@ -657,7 +657,7 @@ Partial Class Form1
         Me.Label34.BackColor = System.Drawing.Color.Transparent
         Me.Label34.Font = New System.Drawing.Font("Lucida Calligraphy", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label34.ForeColor = System.Drawing.Color.Goldenrod
-        Me.Label34.Location = New System.Drawing.Point(855, 42)
+        Me.Label34.Location = New System.Drawing.Point(825, 42)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(360, 39)
         Me.Label34.TabIndex = 15
@@ -680,7 +680,7 @@ Partial Class Form1
         Me.GroupBox12.Controls.Add(Me.J_Price3)
         Me.GroupBox12.Controls.Add(Me.Juice3)
         Me.GroupBox12.Controls.Add(Me.PictureBox12)
-        Me.GroupBox12.Location = New System.Drawing.Point(616, 637)
+        Me.GroupBox12.Location = New System.Drawing.Point(579, 638)
         Me.GroupBox12.Name = "GroupBox12"
         Me.GroupBox12.Size = New System.Drawing.Size(281, 165)
         Me.GroupBox12.TabIndex = 8
@@ -695,7 +695,7 @@ Partial Class Form1
         Me.GroupBox11.Controls.Add(Me.J_Price1)
         Me.GroupBox11.Controls.Add(Me.Juice1)
         Me.GroupBox11.Controls.Add(Me.PictureBox11)
-        Me.GroupBox11.Location = New System.Drawing.Point(616, 467)
+        Me.GroupBox11.Location = New System.Drawing.Point(579, 468)
         Me.GroupBox11.Name = "GroupBox11"
         Me.GroupBox11.Size = New System.Drawing.Size(281, 163)
         Me.GroupBox11.TabIndex = 8
@@ -892,7 +892,7 @@ Partial Class Form1
         Me.GroupBox15.Controls.Add(Me.P_Price2)
         Me.GroupBox15.Controls.Add(Me.Pastry2)
         Me.GroupBox15.Controls.Add(Me.PictureBox15)
-        Me.GroupBox15.Location = New System.Drawing.Point(881, 254)
+        Me.GroupBox15.Location = New System.Drawing.Point(851, 254)
         Me.GroupBox15.Name = "GroupBox15"
         Me.GroupBox15.Size = New System.Drawing.Size(300, 163)
         Me.GroupBox15.TabIndex = 14
@@ -908,7 +908,7 @@ Partial Class Form1
         Me.GroupBox14.Controls.Add(Me.P_Price1)
         Me.GroupBox14.Controls.Add(Me.Pastry1)
         Me.GroupBox14.Controls.Add(Me.PictureBox14)
-        Me.GroupBox14.Location = New System.Drawing.Point(881, 84)
+        Me.GroupBox14.Location = New System.Drawing.Point(851, 84)
         Me.GroupBox14.Name = "GroupBox14"
         Me.GroupBox14.Size = New System.Drawing.Size(300, 163)
         Me.GroupBox14.TabIndex = 9
@@ -920,7 +920,7 @@ Partial Class Form1
         Me.Label29.BackColor = System.Drawing.Color.Transparent
         Me.Label29.Font = New System.Drawing.Font("Lucida Calligraphy", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label29.ForeColor = System.Drawing.Color.Goldenrod
-        Me.Label29.Location = New System.Drawing.Point(756, 425)
+        Me.Label29.Location = New System.Drawing.Point(719, 426)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(290, 39)
         Me.Label29.TabIndex = 13
@@ -935,7 +935,7 @@ Partial Class Form1
         Me.GroupBox13.Controls.Add(Me.J_Price2)
         Me.GroupBox13.Controls.Add(Me.Juice2)
         Me.GroupBox13.Controls.Add(Me.PictureBox13)
-        Me.GroupBox13.Location = New System.Drawing.Point(903, 467)
+        Me.GroupBox13.Location = New System.Drawing.Point(866, 468)
         Me.GroupBox13.Name = "GroupBox13"
         Me.GroupBox13.Size = New System.Drawing.Size(278, 163)
         Me.GroupBox13.TabIndex = 8
@@ -1525,7 +1525,7 @@ Partial Class Form1
         Me.Panel1.ForeColor = System.Drawing.Color.Black
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1804, 984)
+        Me.Panel1.Size = New System.Drawing.Size(1662, 984)
         Me.Panel1.TabIndex = 3
         '
         'ListView1
@@ -1533,9 +1533,9 @@ Partial Class Form1
         Me.ListView1.BackgroundImage = Global.Kafe_Fin.My.Resources.Resources.asdasd
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Column_qty, Me.Column_Desc, Me.Column_Price})
         Me.ListView1.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        ListViewItem2.StateImageIndex = 0
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem2})
-        Me.ListView1.Location = New System.Drawing.Point(1254, 158)
+        ListViewItem1.StateImageIndex = 0
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
+        Me.ListView1.Location = New System.Drawing.Point(1186, 159)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(458, 215)
         Me.ListView1.TabIndex = 273
@@ -1576,7 +1576,7 @@ Partial Class Form1
         Me.Label35.BackColor = System.Drawing.Color.Transparent
         Me.Label35.Font = New System.Drawing.Font("Lucida Calligraphy", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label35.ForeColor = System.Drawing.Color.Goldenrod
-        Me.Label35.Location = New System.Drawing.Point(1288, 481)
+        Me.Label35.Location = New System.Drawing.Point(1220, 482)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(394, 39)
         Me.Label35.TabIndex = 272
@@ -1605,11 +1605,23 @@ Partial Class Form1
         Me.GroupBox17.Controls.Add(Me.Label86)
         Me.GroupBox17.Controls.Add(Me.Label85)
         Me.GroupBox17.Controls.Add(Me.Label84)
-        Me.GroupBox17.Location = New System.Drawing.Point(1255, 523)
+        Me.GroupBox17.Location = New System.Drawing.Point(1187, 524)
         Me.GroupBox17.Name = "GroupBox17"
         Me.GroupBox17.Size = New System.Drawing.Size(457, 299)
         Me.GroupBox17.TabIndex = 271
         Me.GroupBox17.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.IndianRed
+        Me.Button2.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Location = New System.Drawing.Point(263, 244)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(138, 26)
+        Me.Button2.TabIndex = 274
+        Me.Button2.Text = "ORDER AGAIN"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Done_but
         '
@@ -1873,7 +1885,7 @@ Partial Class Form1
         Me.Repeat_but.BackColor = System.Drawing.Color.IndianRed
         Me.Repeat_but.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Repeat_but.ForeColor = System.Drawing.Color.Black
-        Me.Repeat_but.Location = New System.Drawing.Point(1530, 425)
+        Me.Repeat_but.Location = New System.Drawing.Point(1462, 426)
         Me.Repeat_but.Name = "Repeat_but"
         Me.Repeat_but.Size = New System.Drawing.Size(138, 26)
         Me.Repeat_but.TabIndex = 28
@@ -1885,7 +1897,7 @@ Partial Class Form1
         Me.Remove_but.BackColor = System.Drawing.Color.RosyBrown
         Me.Remove_but.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Remove_but.ForeColor = System.Drawing.Color.Black
-        Me.Remove_but.Location = New System.Drawing.Point(1416, 425)
+        Me.Remove_but.Location = New System.Drawing.Point(1348, 426)
         Me.Remove_but.Name = "Remove_but"
         Me.Remove_but.Size = New System.Drawing.Size(108, 26)
         Me.Remove_but.TabIndex = 27
@@ -1897,7 +1909,7 @@ Partial Class Form1
         Me.Proceed_but.BackColor = System.Drawing.Color.DarkSeaGreen
         Me.Proceed_but.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Proceed_but.ForeColor = System.Drawing.Color.Black
-        Me.Proceed_but.Location = New System.Drawing.Point(1302, 425)
+        Me.Proceed_but.Location = New System.Drawing.Point(1234, 426)
         Me.Proceed_but.Name = "Proceed_but"
         Me.Proceed_but.Size = New System.Drawing.Size(108, 26)
         Me.Proceed_but.TabIndex = 14
@@ -1910,7 +1922,7 @@ Partial Class Form1
         Me.Label25.BackColor = System.Drawing.Color.Transparent
         Me.Label25.Font = New System.Drawing.Font("Lucida Calligraphy", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label25.ForeColor = System.Drawing.Color.Goldenrod
-        Me.Label25.Location = New System.Drawing.Point(1302, 116)
+        Me.Label25.Location = New System.Drawing.Point(1234, 117)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(332, 39)
         Me.Label25.TabIndex = 26
@@ -2500,23 +2512,11 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.IndianRed
-        Me.Button2.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(263, 244)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(138, 26)
-        Me.Button2.TabIndex = 274
-        Me.Button2.Text = "ORDER AGAIN"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1804, 984)
+        Me.ClientSize = New System.Drawing.Size(1662, 984)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form1"
         Me.Text = "Form1"

@@ -276,7 +276,7 @@ Partial Class Form2
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Bauhaus 93", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label37.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label37.Location = New System.Drawing.Point(394, 54)
+        Me.Label37.Location = New System.Drawing.Point(390, 54)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(178, 33)
         Me.Label37.TabIndex = 2
@@ -285,11 +285,11 @@ Partial Class Form2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bauhaus 93", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Font = New System.Drawing.Font("Bauhaus 93", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(136, 12)
+        Me.Label1.Location = New System.Drawing.Point(136, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(224, 108)
+        Me.Label1.Size = New System.Drawing.Size(176, 84)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "K A F E " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "N A Y O N"
         '
@@ -2207,7 +2207,7 @@ Partial Class Form2
         Me.BackColor = System.Drawing.SystemColors.GrayText
         Me.BackgroundImage = Global.Kafe_Fin.My.Resources.Resources.kfbg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1371, 1000)
+        Me.ClientSize = New System.Drawing.Size(1372, 984)
         Me.Controls.Add(Me.Repeat_but)
         Me.Controls.Add(Me.Remove_but)
         Me.Controls.Add(Me.Proceed_but)

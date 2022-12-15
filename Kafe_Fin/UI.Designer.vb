@@ -28,33 +28,35 @@ Partial Class UI
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Info
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(421, 717)
+        Me.Button1.Location = New System.Drawing.Point(252, 700)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 28)
+        Me.Button1.Size = New System.Drawing.Size(147, 28)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Select"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.Info
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(421, 369)
+        Me.Button2.Location = New System.Drawing.Point(252, 338)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(93, 28)
+        Me.Button2.Size = New System.Drawing.Size(147, 28)
         Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Select"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'UI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Kafe_Fin.My.Resources.Resources.uiui__2_
+        Me.BackgroundImage = Global.Kafe_Fin.My.Resources.Resources.bgbgbggb__1_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(960, 865)
+        Me.ClientSize = New System.Drawing.Size(685, 765)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.DoubleBuffered = True
